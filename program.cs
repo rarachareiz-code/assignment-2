@@ -28,9 +28,9 @@ namespace Assignment2
         {
             string filePath = "students.txt";
 
-            // ======================
+
             // TASK 1: CREATE & WRITE FILE
-            // ======================
+
             List<Student> students = new List<Student>()
             {
                 new Student(101, "Juan Cruz", "BSIT", 88),
@@ -48,9 +48,8 @@ namespace Assignment2
 
             Console.WriteLine("students.txt file created and data written successfully.\n");
 
-            // ======================
             // TASK 2: READ FILE & LINQ
-            // ======================
+
             List<Student> studentList = File.ReadAllLines(filePath)
                 .Select(line =>
                 {
